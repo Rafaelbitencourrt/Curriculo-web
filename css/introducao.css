@@ -1,0 +1,54 @@
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.introducao_titulo {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+}
+
+.introducao_titulo::before {
+  content: url(../img/detalhe.svg);
+}
+
+.introducao_titulo::after {
+  content: url(../img/detalhe-ponto.svg);
+}
+
+.introducao p {
+  color: #2e2e2e;
+}
+
+@media (max-width: 1000px) {
+  .introducao_titulo {
+    font-size: 3rem;
+  }
+
+  .introducao_titulo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 400) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao img {
+    display: none;
+  }
+}
