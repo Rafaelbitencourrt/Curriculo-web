@@ -12,14 +12,27 @@
   font-size: 4.5rem;
   line-height: 1.125;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .introducao_titulo::before {
-  content: url(../img/detalhe.svg);
+  content: "";
+  width: 15px;
+  height: 51px;
+  background-color: #c12626;
+  position: absolute;
+  left: -15px;
+  top: 15px;
 }
 
 .introducao_titulo::after {
-  content: url(../img/detalhe-ponto.svg);
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c12626;
+  position: absolute;
+  bottom: 10px;
 }
 
 .introducao p {
